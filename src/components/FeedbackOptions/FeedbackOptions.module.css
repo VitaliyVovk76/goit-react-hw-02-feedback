@@ -1,0 +1,22 @@
+.feedbackContainer {
+  display: flex;
+  max-width: 320px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedbackButton {
+  font-size: 15px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
+}
