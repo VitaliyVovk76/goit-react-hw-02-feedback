@@ -28,9 +28,7 @@ class App extends Component {
     return res;
   };
   render() {
-    const { good } = this.state;
-    const { neutral } = this.state;
-    const { bad } = this.state;
+    const { good, neutral, bad } = this.state;
     const valuesState = Object.values(this.state);
     const kaysState = Object.keys(this.state);
     const totalAmount = this.countTotalFeedback(valuesState);
@@ -57,7 +55,7 @@ class App extends Component {
               positivePercentage={positiveFeedback}
             />
           ) : (
-            <Notification message={"No feedback given"} />
+            <Notification message="No feedback given" />
           )}
         </Section>
       </Container>
