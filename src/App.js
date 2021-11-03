@@ -14,14 +14,14 @@ class App extends Component {
   };
 
   hendleClick = (key) => {
-    this.setState({ [key]: this.state[key] + 1 });
+    this.setState((prevState) => ({ [key]: prevState[key] + 1 }));
   };
 
   countTotalFeedback = (arr) => {
     return arr.reduce((acc, value) => acc + +value, 0);
   };
   countPositiveFeedbackPercentage = (total, positive) => {
-    let res = Math.round((100 / total) * positive);
+    const res = Math.round((100 / total) * positive);
     if (Number.isNaN(res)) {
       return 0;
     }
